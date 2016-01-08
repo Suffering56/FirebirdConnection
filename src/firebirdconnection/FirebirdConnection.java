@@ -22,11 +22,11 @@ public class FirebirdConnection {
         while (rs.next()) {
             System.out.println(rs.getString(1) + "   |||   " + rs.getString(2));    // + "   |||   " + rs.getString(3) + "   |||   " + rs.getString(4)
                                                                                     // + "   |||   " + rs.getString(5) + "   |||   " + rs.getString(6)
-            if (rs.getString(1).equals("1")) {
-                byte[] bdata = rs.getBlob(3).getBytes(1, (int) rs.getBlob(3).length());
-                String data1 = new String(bdata);
-                System.out.println("data: " + data1);
-            }
+//            if (rs.getString(1).equals("1")) {
+//                byte[] bdata = rs.getBlob(3).getBytes(1, (int) rs.getBlob(3).length());
+//                String data1 = new String(bdata);
+//                System.out.println("data: " + data1);
+//            }
         }
         connection.close();
     }
